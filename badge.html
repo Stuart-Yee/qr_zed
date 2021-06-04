@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Q.R. Zed Engraving Quick Nametage Order Form">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="qrzstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <title>Quick Nametag Order Form</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Q.R. Zed Engraving</h1>
+            <h2>Nametag Order Form:</h2>
+        </div>
+        <div id="main">
+            <div id="preview">
+                <img src="#" alt="logoleft" id="logoLeft">
+                <div id="lines">
+                    <p id="line1">KI6FZB</p>
+                    <p id="line2">Stuart Yee</p>
+                    <p id="line3">Concord, CA</p>
+                    <p id="line4">Gallifrey Amateur Radio Club</p>
+                </div>
+                <img src="#" alt="" id="logoRight">
+            </div>
+            <div class="row">
+                <label for="Color">Color</label>
+                <select name="Color" id="Color">
+                    <option value="black">Black w/ White Letters</option>
+                    <option value="white">White w/ Black Letters</option>
+                    <option value="blue">Blue w/ White Letters</option>
+                    <option value="gold">Yellow w/ Black Letters</option>
+                    <option value="rgb(202, 5, 5)">Red w/ White Letters</option>
+                    <option value="silver">Silver w/ Black Letters*</option>
+                    <option value="darkgoldenrod">Gold w/ Black Letters*</option>
+                    <option value="grey">Grey w/ Black Letters</option>
+                </select>
+                <label for="size">Size</label>
+                <select name="size" id="size">
+                    <option value="200">1"x3"</option>
+                    <option value="250">1.25"x3"</option>
+                    <option value="300">1.5"x3"</option>
+                    <option value="350">1.75"x3"</option>
+                    <option value="400">2"x3"</option>
+                </select>
+                
+                <label for="corners">Corner Style</label>
+                <select name="corners" id="corners">
+                    <option value="square">Square</option>
+                    <option value="rounded">Rounded</option>
+                </select>
+                <button id="left" class="align"><< </button>
+                <label for="">Text Align </label>
+                <button id="right" class="align">>></button>
+                <P class="row">Preview color is an approximation and may vary slightly from finished product</P>
+                <p class="row">*Metallic color: Metallics come in shiny and brush finishes</p>
+            </div>
+
+            <div id="content">
+                <div class="row">
+                    <label for="line1entry">Line 1:</label><input type="text" id="line1entry" class="entry">
+                    <button id="Show1">Show</button>
+                    <button id="Hide1">Hide</button>
+                    <button id="inc1">+</button>
+                    <button id="dec1">-</button>
+                </div>
+                <div class="row">
+                    <label for="line2entry">Line 2:</label><input type="text" id="line2entry" class="entry">
+                    <button id="Show2">Show</button>
+                    <button id="Hide2">Hide</button>
+                    <button id="inc2">+</button>
+                    <button id="dec2">-</button>
+                </div>
+                <div class="row">
+                    <label for="line3entry">Line 3:</label><input type="text" id="line3entry" class="entry">
+                    <button id="Show3">Show</button>
+                    <button id="Hide3">Hide</button>
+                    <button id="inc3">+</button>
+                    <button id="dec3">-</button>
+                </div>
+                <div class="row">
+                    <label for="line4entry">Line 4:</label><input type="text" id="line4entry" class="entry">
+                    <button id="Show4">Show</button>
+                    <button id="Hide4">Hide</button>
+                    <button id="inc4">+</button>
+                    <button id="dec4">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <label for="logoLeftsel">LogoLeft:</label>
+                <select name="logoLeftsel" id="logoLeftsel">
+                    <option value="None">None</option>
+                    <option value="ARRL">ARRL</option>
+                    <option value="CA">California</option>
+                </select>
+                <label for="logoRightsel">LogoRight:</label>
+                <select name="logoRightsel" id="logoRightsel">
+                    <option value="None">None</option>
+                    <option value="ARRL">ARRL</option>
+                    <option value="CA">California</option>
+                </select>
+            </div>
+
+
+        </div>
+        <div id="footer">
+            <p>The above mock-up is an approximation of the finished product you will receive. Color hue, specific font, font size and engraving thickness may vary slightly. Ultimately we'll make it look good!</p>
+            <p>If you feel the finished product deviates significantly from the above preview, let us know very specifically what elements you'd like us to revise and we'll gladly replace your nametag.</p>
+        </div>
+    </div>
+    <script src="qrzcode.js"></script>
+</body>
+
+</html>

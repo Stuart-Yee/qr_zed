@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px red dashed; */
+}
+
+#wrapper {
+    margin: 0 auto;
+    background-color: rgb(176, 193, 226);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#header {
+    height: 10%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    color: navy;
+}
+
+h1 {
+    font-family: 'Limelight', cursive;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#main {
+    margin: 0 auto;
+    width: 800px;
+}
+
+#preview {
+    border: 2px solid white;
+    height: 200px;
+    width: 600px;
+    background-color: black;
+    color: white;
+    box-shadow: 4px 5px gray;
+    margin: 20px auto;
+    display: block;
+}
+
+label {
+    font-weight: bold;
+}
+
+#lines {
+    margin: 10px auto;
+    margin-left: 100px;
+    height: 90%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    vertical-align: bottom;
+}
+
+#lines p{
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 1px 1px gray;
+    line-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#lines #line1 {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#lines #line2 {
+    font-size: 40px;
+}
+
+.row{
+    margin: 10px;
+}
+
+.entry {
+    width: 400px;
+    margin: 5px;
+}
+
+button {
+    min-width: 20px;
+}
+
+#logoLeft, #logoRight {
+    max-height: 90%;
+    width: auto;
+    display: inline-block;
+}
+
+#footer {
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#footer p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
